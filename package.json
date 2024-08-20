@@ -6,9 +6,9 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite --host 0.0.0.0 --port  ${PORT-3000} preview",
     "postinstall": "npm run build",
-    "serve-heroku": "vite --host 0.0.0.0 --port $PORT preview" 
+    "serve-heroku": "vite --host 0.0.0.0 --port  ${PORT-3000} preview" 
   },
   "dependencies": {
     "@date-io/date-fns": "^3.0.0",
