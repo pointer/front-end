@@ -1,1 +1,1 @@
-web: npm run preview
+worker: npm run preview
