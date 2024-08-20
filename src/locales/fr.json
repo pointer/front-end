@@ -1,0 +1,446 @@
+{
+  "errors": {
+    "404": "404 Page not found",
+    "BAD_TOKEN": "Bad token",
+    "WRONG_PASSWORD": "Wrong password",
+    "USER_DOES_NOT_EXIST": "User does not exists",
+    "PASSWORDS_DONT_MATCH": "Passwords don´t match",
+    "PASSWORD_TOO_SHORT_MIN_5": "Password too short, minimum 5 characters",
+    "BLOCKED_USER": "Too many failed login attempts, user blocked temporarely",
+    "SERVER_TIMEOUT_CONNECTION_ERROR": "Server is not responding, connection error",
+    "EMAIL_IS_NOT_VALID": "E-mail not valid",
+    "IS_EMPTY": "Empty fields",
+    "ERROR": "Error",
+    "MISSING": "Missing fields",
+    "NOT_FOUND_OR_ALREADY_VERIFIED": "Not found or already verified",
+    "NOT_FOUND_OR_ALREADY_USED": "Not found or already used",
+    "NOT_FOUND": "Not found",
+    "UNAUTHORIZED": "Unauthorized",
+    "EMAIL_ALREADY_EXISTS": "E-mail already exists",
+    "ID_MALFORMED": "ID malformed",
+    "ERROR_WITH_FILTER": "Error with filter",
+    "CITY_ALREADY_EXISTS": "City already exists",
+    "NOT_YET": "Pas Encore Implementé "
+  },
+  "common": {
+    "DELETE": "Effacer",
+    "CANCEL": "Cancel",
+    "WARNING": "Warning",
+    "DO_YOU_REALLY_WANT_TO_DELETE_THIS_ITEM": "Voulez vous vraiment effacer cet item?",
+    "CLOSE": "Fermer",
+    "SAVED_SUCCESSFULLY": "Sauvegarder avec succes",
+    "DELETED_SUCCESSFULLY": "Effacer avec succes",
+    "CREATED": "Créer le",
+    "UPDATED": "Mis à jour le",
+    "GO_BACK": "En arrière",
+    "DONE": "Done",
+    "REFRESH": "Rafraichir"
+  },
+  "loading": {
+    "PLEASE_WAIT": ""
+  },
+  "footer": {
+    "MADE_WITH": "",
+    "BY": ""
+  },
+  "menuItems": {
+    "HOME": "Home",
+    "ABOUT": "",
+    "MY_PROFILE": "",
+    "SIGNUP": "Sign Up",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout"
+  },
+  "controlItems": {
+    "TRACK_AVAILABILITY": "Suivi disponibiltés",
+    "DISTRIBUTE_HOURS": "Distribution heures",
+    "DAYS_OFF_CONTROL": "Controle Jours Off",
+    "TRADE_SHIFT": "Echanges Shifts",
+    "SMART_NOTES": "Notes intelligentes",
+    "CONTROL": "Contrôles"
+  },
+  "metricItems": {
+    "METRIC_DASH": "Dashboard",
+    "METRIC_DAYBOOKS": "Suivi Main courantes",
+    "METRIC_INCIDENTS": "Stats Incidents",
+    "METRIC_CLIENTS": "Stats Clients",
+    "METRIC_TRADE_SHIFT": "Stats Echanges Shifts",
+    "METRICS": "Metrics/Stats"
+  },
+  "adminItems": {
+    "ADMIN": "Admin",
+    "CITIES": "Villes",
+    "USERS": "Agents",
+    "CLIENTS": "Contact Clients",
+    "BUSINESS": "Business",
+    "SITE": "Sites",
+    "TASKS": "Taches",
+    "EQUIPMENT": "Equipments",
+    "TASK_EQUIPMENT": "Taches/Equipments",
+    "SYSTEM_CONFIG": "System Settings"
+  },
+  "manageItems": {
+    "TITLE": "Management",
+    "headers": {
+      "AGENT_SCHEDULES": "Plannifs Agent",
+      "ASSIGNMENTS": "Assignments",
+      "SHIFT_CONSTRAINTS": "Constraintes Agent",
+      "SITE_CONSTRAINTS": "Constraintes Site",
+      "DISCREPANCIES": "Discrepancies",
+      "AGENT_SCHEDULE": "Vacations Agent",
+      "SITE_SCHEDULE": "Vacations Site",
+      "EXCESS_DEMAND": "Demandes en Exces ",
+      "COEFFICIENTS": "Coefficients",
+      "INCIDENTS": "Incidents",
+      "DAYBOOKS": "Mains courantes",
+      "PUNCHCLOCKS": "Presences",
+      "CLIENT_REQUESTS": "Client Requests",
+      "CUMUL_HOURS": "Cumul hours",
+      "PENALTIES": "Penalties"      
+    }
+  },
+  "shifttype": {
+    "SHIT_TYPE": "Type de quart",
+    "NEEDED": "Nombre d'agents",
+    "EARLY": "Tôt",
+    "DAY": "Jour",
+    "LATE": "Tard",
+    "NIGHT": "Nuit"
+  },
+  "roles": {
+    "ADMIN": "Administrateurr",
+    "USER": "Usager",
+    "AGENT": "agent",
+    "CLIENT": "client"
+  },
+  "dataTable": {
+    "NEW_ITEM": "Nouvel Item",
+    "EDIT_ITEM": "Editer Item",
+    "CANCEL": "Canceler",
+    "SAVE": "Sauvegarder",
+    "EDIT": "Editer",
+    "DELETE": "Effacer",
+    "RESET": "Reinitialiser",
+    "ACTIONS": "Actions",
+    "ROWS_PER_PAGE": "Lignes par page",
+    "NO_DATA": "Pas de données",
+    "NO_RESULTS": "Pas de resultats",
+    "OF": "de",
+    "SEARCH": "Chercher",
+    "NEW_TEXT_MESSAGE": "Message",
+    "NEW_MESSAGE_TEXT": "Message",
+    "NEW_MESSAGE_SUBJECT": "Subject",
+    "SEND": "Envoyer",
+    "GENERATE": "Generer",
+    "VALID_PUNCH": "Valider",
+    "FIND_PUNCH": "Antérieure",
+    "FIND_AGENT": "Chercher",
+    "AGENT_NAME": "Nom agent",
+    "DETAILS": "Details"      
+
+  },
+  "landing": {
+    "TITLE": "Landing",
+    "DESCRIPTION": "",
+    "BUY_ME_A_COFFEE": "",
+    "BUY_ME_A_COFFEE_DESCRIPTION": "",
+    "DESCRIPTION_VUE": "",
+    "DESCRIPTION_API": "",
+    "API_DOCUMENTATION": "",
+    "FRONTEND_DOCUMENTATION": ""
+  },
+  "home": {
+    "TITLE": "Protected Home",
+    "GREETING": "Bienvenue %{0}",
+    "DESCRIPTION": "Cette page est disponible en privé lorsque l'utilisateur s'identifie avec ses identifiants",
+    "VERIFY_YOUR_ACCOUNT": "IMPORTANT: Verify your account",
+    "VERIFY_YOUR_ACCOUNT_DESCRIPTION": "Vous devez vérifier votre compte en cliquant sur le lien envoyé à votre e-mail pour pouvoir profiter de toutes les fonctionnalités de notre application",
+    "CLOSE": "Clore"
+  },
+  "about": {
+    "TITLE": "About",
+    "DESCRIPTION": "This page is publicly available"
+  },
+  "login": {
+    "TITLE": "Login",
+    "DESCRIPTION": "Ceci est une démo. La base de données se réinitialise toutes les 30 minutes. Donc, tout ce que vous faites sera perdu après un court laps de temps..<br />E-mail: admin@admin.com <br />Password: 12345",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Password",
+    "LOGIN": "Login",
+    "FORGOT_PASSWORD": "Forgot password?"
+  },
+  "forgotPassword": {
+    "TITLE": "Forgot my password",
+    "EMAIL": "E-mail",
+    "DESCRIPTION": "Enter your E-mail address so we can send you a message with instructions to recover your password",
+    "RECOVER": "Recover",
+    "RESET_EMAIL_SENT": "We have sent a message to %{0} with instructions to recover your password"
+  },
+  "resetPassword": {
+    "TITLE": "Change Password",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "CHANGE_PASSWORD": "Change Password",
+    "PASSWORD_CHANGED": "Password changed successfully"
+  },
+  "signup": {
+    "TITLE": "Signup",
+    "NAME": "Name",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "SIGN_ME_UP": "Sign me up"
+  },
+  "verify": {
+    "TITLE": "E-mail verification",
+    "EMAIL_VERIFIED": "E-mail verified successfully"
+  },
+  "myProfile": {
+    "TITLE": "My profile",
+    "CHANGE_MY_PASSWORD": "Change My Password",
+    "CURRENT_PASSWORD": "Current Password",
+    "NEW_PASSWORD": "New Password",
+    "CONFIRM_NEW_PASSWORD": "Confirm New Password",
+    "PASSWORD_CHANGED": "Password changed successfully",
+    "NAME": "Name",
+    "EMAIL": "E-mail",
+    "PHONE": "Phone",
+    "CITY": "City",
+    "NO_RESULTS_FOUND": "No results found",
+    "COUNTRY": "Country",
+    "SAVE": "Save",
+    "PROFILE_SAVED_SUCCESSFULLY": "Profile saved successfuly"
+  },
+  "assignments": {
+    "TITLE": "Vacations",
+    "headers": {
+      "ASSIGN_AGENT": "Agent",
+      "ASSIGN_SITE": "Site",
+      "ASSIGN_TASK": "Tache",
+      "ASSIGN_START_TIME": "Heure Début",
+      "ASSIGN_START_DATE": "Date Début",
+      "ASSIGN_END_TIME": "Heure Fin",
+      "ASSIGN_END_DATE": "Date Fin",
+      "ASSIGN_OBS": "Observations",
+      "ASSIGN_EQUIPMENT": "Equipement"
+    }
+  },
+  "cities": {
+    "TITLE": "Ville",
+    "headers": {
+      "NAME": "Nom"
+    }
+  },
+  "tasks": {
+    "TITLE": "Taches",
+    "headers": {
+      "TASK_NAME": "Nom",
+      "TASK_DESCRIPTION": "Description"
+    }
+  },
+  "taskEquipments": {
+    "TITLE": "Task/Equipments",
+    "headers": {
+      "TASK_NAME": "Name",
+      "TASK_DESCRIPTION": "Description"
+    }
+  },
+  "equipment": {
+    "TITLE": "Equipement",
+    "headers": {
+      "EQUIPMENT_NAME": "Nom",
+      "EQUIPMENT_DESCRIPTION": "Description"
+    }
+  },
+  "users": {
+    "TITLE": "Agents",
+    "headers": {
+      "USER_NAME": "Nom usager",
+      "FIRST_NAME": "Prénom",
+      "LAST_NAME": "Nom",
+      "USER_AVATAR": "Avatar",
+      "EMAIL": "E-mail",
+      "ROLE": "Role",
+      "VERIFIED": "Verifié",
+      "CITY": "Ville",
+      "SKILLS": "Compétences",
+      "OBSERVATIONS": "Observations",
+      "PHONE": "Téléphone",
+      "STATUS": "Disponible"
+    },
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password"
+  },
+  "business": {
+    "TITLE": "Businesses",
+    "headers": {
+      "CONTEXT": "",
+      "TYPE": "Type",
+      "NAME": "Nom",
+      "STREET_ADDRESS": "Rue",
+      "ADDRESS_LOCALITY": "Ville",
+      "ADDRESS_REGION": "Dept.",
+      "POSTAL_CODE": "Code Postal",
+      "TELEPHONE": "Telephone",
+      "EMAIL": "email",
+      "URI": "URL",
+      "CONTACT_NAME": "Contact",
+      "JOB_TITLE": "Titre",
+      "CONTACT_PHONE": "Tel. Contact",
+      "CONTACT_EMAIL": "Contact email"
+    }
+  },
+  "site": {
+    "TITLE": "Sites",
+    "headers": {
+      "NEW_ITEM": "Nouv. Site",
+      "EDIT_ITEM": "Edit. Site",
+      "SITE_TYPE": "Type",
+      "SITE_NAME": "Nom",
+      "SITE_STREET_ADDRESS": "Rue",
+      "SITE_ADDRESS_LOCALITY": "Ville",
+      "SITE_ADDRESS_REGION": "Dept.",
+      "SITE_POSTAL_CODE": "Code Postal",
+      "SITE_PHONE": "Phone",
+      "SITE_EMAIL": "Mail",
+      "SITE_CONTACT_NAME": "Contact",
+      "JOB_TITLE": "Titre",
+      "SITE_CONTACT_PHONE": "Tél. Contact",
+      "SITE_CONTACT_EMAIL": "Mail Contact",
+      "SITE_BUSINESS": "Organization",
+      "SITE_LAT": "Latitude",
+      "SITE_LONG": "Longitude",
+      "SITE_SHIFT_AM": "Vaca. 1",
+      "SITE_SHIFT_PM": "Vaca. 2",
+      "SITE_SHIFT_NIGHT": "Vaca. 3",
+      "SITE_SHIFT_DURATION": "Durée",
+      "SITE_SHIFT_HINT" : "Entrer Temps de Début du Shift"      
+    }
+  },
+  "agentconstraints": {
+    "TITLE": "Contraintes Shift",
+    "DESCRIPTION": ""
+  },
+  "clientrequests": {
+    "TITLE": "Client Requests",
+    "DESCRIPTION": ""
+  },
+  "siteconstraints": {
+    "TITLE": "Contraintes Site",
+    "DESCRIPTION": ""
+  },
+  "discrepancies": {
+    "TITLE": "Discrepancies",
+    "headers": {
+      "DESCRIPTION": "Discrepancies",
+      "SITE": "Site",
+      "DATE": "Date",
+      "SHIFT_SYMBOL": "Symbol",
+      "NEEDED_AGENTS": "Demande",
+      "ASSIGNED": "Assign",
+      "START_SCHEDULE": "Début Schedule",
+      "AGENT": "Agent",
+      "LENGTH": "Long.",
+      "LEVEL": "Niveau",
+      "STATUS": "Status",
+      "PENALTY": "Penalité",
+      "TYPE": "Type"      
+    }
+  },
+  "siteschedules": {
+    "TITLE": "Vacations Site",
+    "headers": {
+      "SITE_SCHEDULES_AGENT": "Agent",
+      "SITE_SCHEDULES_SITE": "Site",
+      "SITE_SCHEDULES_TASK": "Tache",
+      "SITE_SCHEDULES_START_TIME": "Heure Début",
+      "SITE_SCHEDULES_START_DATE": "Date Début",
+      "SITE_SCHEDULES_END_TIME": "Heure Fin",
+      "SITE_SCHEDULES_END_DATE": "Date Fin",
+      "SITE_SCHEDULES_OBS": "Observations",
+      "SITE_SCHEDULES_EQUIPMENT": "Equipement",
+      "AGENT_BATCH": "Nombre d'agents"      
+    }
+  },
+  "incident": {
+    "TITLE": "Incidents",
+    "headers": {
+      "DESCRIPTION": "Description",
+      "SITE": "Site",
+      "DATE": "Date",
+      "AGENT": "agent",
+      "INCIDENT_TYPE": "Incident type",
+      "IMAGE": "Image"
+    }
+  },
+  "daybook": {
+    "TITLE": "Daybooks",
+    "headers": {
+      "DAYBOOK_MEMO": "Memo",
+      "DAYBOOK_SITE": "Site",
+      "DAYBOOK_DATE": "Date",
+      "DAYBOOK_AGENT": "Agent",
+      "DAYBOOK_SUBJECT": "Suject"
+    }
+  },
+  "layoutType": {
+    "LAYOUT_TYPE_DAY": "Jour",
+    "LAYOUT_TYPE_WEEK": "Semaine",
+    "LAYOUT_TYPE_MONTH": "Mois",
+    "LAYOUT_TYPE_4DAYS": "4 Jours",
+    "LAYOUT_TYPE_TODAY": "Aujourd'hui"
+  },
+  "punchclock": {
+    "TITLE": "Présences",
+    "headers": {
+      "PUNCH_USERNAME": "Agent",
+      "PUNCH_SITE": "Site",
+      "PUNCH_START_LOCATION": "Location début",
+      "PUNCH_END_LOCATION": "Location fin",
+      "PUNCH_START": "Début",
+      "PUNCH_END": "Fin",
+      "PUNCH_WORKED": "Temps Travail"
+    }
+  },
+  "cumulHours": {
+    "TITLE": "Cummul Hebdo (h)",
+    "headers": {
+      "WEEKLY_HOURS_AGENT": "Agent",
+      "WEEKLY_HOURS_SITE": "Sites",
+      "WEEKLY_HOURS_SHIFT": "Shifts",
+      "WEEKLY_HOURS_START_DATE": "Date début",
+      "WEEKLY_HOURS_END_DATE": "Date fin",
+      "WEEKLY_HOURS_WORKED": "Réel",
+      "WEEKLY_HOURS_PLANNED": "Plannifié"
+    }
+  },
+  "dashboardItems": {
+    "TITLE": "Dashboard",
+    "headers": {
+      "DASHBOARD": "Dashboard"
+    }
+  },
+  "agentSchedule": {
+    "TITLE": "Agent Schedules",
+    "headers": {
+      "AGENT_SCHEDULE_AGENT": "Agent",
+      "AGENT_SCHEDULE_SITE": "Site",
+      "AGENT_SCHEDULE_SCHEDULE": "Plannif",
+      "AGENT_SCHEDULE_DATE": "Date",
+      "AGENT_SCHEDULE_SHIFT": "Shift",
+      "AGENT_SCHEDULE_START_DATE": "Début",
+      "AGENT_SCHEDULE_END_DATE": "Fin",
+      "AGENT_SCHEDULE_AGENT_NAME": "Nom agent",
+      "AGENT_SCHEDULE_PLANNED": "Plannifiés",
+      "AGENT_SCHEDULE_EFFECTIVE": "Effectués",
+      "AGENT_SCHEDULE_PENALTIES" : "Penalties",
+      "AGENT_SCHEDULE_PERIOD" : "Periode",
+      "AGENT_SCHEDULE_DETAILS" : "Details",
+      "AGENT_SCHEDULE_TYPE": "Type",
+      "AGENT_SCHEDULE_LEVEL" : "Level",
+      "AGENT_SCHEDULE_LENGTH" : "Longueur",      
+      "AGENT_SCHEDULE_STATUS" : "Status",
+      "AGENT_SCHEDULE_PENALTY" : "Penalty"
+    }
+  }
+}

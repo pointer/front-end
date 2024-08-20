@@ -1,0 +1,44 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "npm run build",
+    "serve-heroku": "vite --host 0.0.0.0 --port $PORT preview" 
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^3.0.0",
+    "@mdi/font": "^7.4.47",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "grpc-web": "^1.5.0",
+    "moment-timezone": "^0.5.45",
+    "nuxt": "^3.12.2",
+    "pinia": "^2.0.13",
+    "process": "^0.11.10",
+    "vee-validate": "^4.5.11",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vue": "^3.4.29",
+    "vue-axios": "^3.5.2",
+    "vue-i18n": "^9.13.1",
+    "vuelidate": "^0.7.7",
+    "vuetify": "^3.6.0-beta.0.0",
+    "vuex": "^4.1.0",
+    "webpack": "^5.93.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
