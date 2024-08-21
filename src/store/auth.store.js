@@ -59,7 +59,9 @@ export const useAuthStore = defineStore({
               localStorage.setItem('user_id', JSON.stringify(response.data.id));              
               localStorage.setItem('token', JSON.stringify(response.data.access_token));
               localStorage.setItem('token_type', JSON.stringify(response.data.token_type));
-              localStorage.setItem('role', JSON.stringify(response.data.role));
+              localStorage.setItem('role', 0);
+              if('Supervisor'.localeCompare(response.data.role) == 0)
+                localStorage.setItem('role', 1);
               localStorage.setItem('working_days', JSON.stringify(response.data.working_days));
               localStorage.setItem(
                 'tokenExpiration',

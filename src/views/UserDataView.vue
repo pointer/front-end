@@ -97,22 +97,6 @@
                 @click:append-inner="visible = !visible"
               >
               </v-text-field>
-              <!-- <Password
- v-model.trim="v$.passwordConfirm.$model"
- :feedback="false"
- :class="{ 'p-invalid': v$.passwordConfirm.$error }"
- @blur="v$.passwordConfirm.$touch()"
- class="p-mb-1"
- placeholder="Confirm Password"
- toggleMask
- >
- </Password>
- <template
-    v-for="(error, index) of v$.passwordConfirm.$errors"
-    :key="index"
- >
-   <span v-if="v$.passwordConfirm.$error" class="p-error">{{error.$message}}</span>
- </template> -->
               <ErrorMessage name="password" />
             </v-col>
           </v-row>
@@ -219,10 +203,7 @@
               ></v-combobox>
             </v-col>
             <v-col cols="12" md="6">
-              <v-checkbox
-                v-model="user.is_superuser"
-                label="Supervisor"
-              ></v-checkbox>
+              <v-switch v-model="user.is_superuser" label="Supervisor"></v-switch>
             </v-col>
             <v-col cols="12" md="6">
               <v-checkbox v-model="user.is_active" label="Active"></v-checkbox>
@@ -312,7 +293,7 @@ const schema = Yup.object().shape({
 //   },
 
 let dialog = ref(false);
-const user = ref({
+let user = ref({
   firstName: "",
   lastName: "",
   email: "",
@@ -367,6 +348,7 @@ function closeDialog() {
 async function updateUserData(user_data) {
   try {
     const authStore = useAuthStore();
+    console.log(user_data.is_supervisor)
     const response = await authStore.userRegister({
       email: user_data.email,
       password: user_data.password,
