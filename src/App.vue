@@ -122,7 +122,7 @@ watch(group, () => {
     <v-app-bar color="primary" app elevation="4" :height="64" density="compact">
       <v-app-bar-nav-icon @click.stop="toggleDrawer"></v-app-bar-nav-icon>
       <v-toolbar-title>
-        <h2>Effort Tracking System</h2>
+        <h2>Randstadt Rapport Effort</h2>
       </v-toolbar-title>
       <!-- <v-spacer></v-spacer> -->
       <v-btn icon>
