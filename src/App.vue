@@ -96,9 +96,9 @@ onMounted(() => {
   // };
   const role = JSON.parse(localStorage.getItem("role"));
   if (role) {
-    if (role === "true") {
+    if (role === 1) {
       router.push("/approbation");
-    } else if (role === "false") {
+    } else if (role === 0) {
       router.push("/employee");
     } else {
       router.push("/");
@@ -122,7 +122,7 @@ watch(group, () => {
     <v-app-bar color="primary" app elevation="4" :height="64" density="compact">
       <v-app-bar-nav-icon @click.stop="toggleDrawer"></v-app-bar-nav-icon>
       <v-toolbar-title>
-        <h2>Randstadt Rapport Effort</h2>
+        <h2>Randstadt Report Effort</h2>
       </v-toolbar-title>
       <!-- <v-spacer></v-spacer> -->
       <v-btn icon>
@@ -172,7 +172,8 @@ watch(group, () => {
 nav {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
+  /* margin-bottom: 1rem; */
 }
 
 nav a {

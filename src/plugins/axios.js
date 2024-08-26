@@ -1,8 +1,8 @@
 import axios from "axios";
 import https from "https";
-// const SRV_API_URL =
+// const VITE_SRV_API_URL =
 //     process.env.NODE_ENV === 'development'
-//         ? 'http://localhost:8080/admin/api'
+//         ? 'https://cra-backend-a041b1ab5b0c.herokuapp.com/'
 //         : '/admin-app/admin/api';
 axios.defaults.baseURL = "https://cra-backend-a041b1ab5b0c.herokuapp.com/";
 //   `${
@@ -11,9 +11,9 @@ axios.defaults.baseURL = "https://cra-backend-a041b1ab5b0c.herokuapp.com/";
 axios.defaults.headers.common["Accept-Language"] =
   JSON.parse(localStorage.getItem("locale")) || "en";
 
-const SRV_API_URL = `${import.meta.env.SRV_API_URL}`;
+const SRV_API_URL = `${import.meta.env.VITE_SRV_API_URL}`;
 const instance = axios.create({
-  baseURL: "https://cra-backend-a041b1ab5b0c.herokuapp.com/",
+  baseURL : "https://cra-backend-a041b1ab5b0c.herokuapp.com/",
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
     requestCert: false,

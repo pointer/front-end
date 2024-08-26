@@ -38,6 +38,21 @@ export const useApprobationStore = defineStore({
         },
         saveApprobations(payload) {
             return api.saveApprobations(payload);
+            // return new Promise((resolve, reject) => {
+            //     api.saveApprobations(payload)
+            //         .then((response) => {
+            //             // console.log(JSON.stringify(response))
+            //             if (response.status === 200) {
+            //                 console.log(response)
+            //                 resolve(response.data);
+            //             } else {
+            //                 reject(response.data);
+            //             }
+            //         })
+            //         .catch((error) => {
+            //             reject(error);
+            //         });
+            // });            
         },
         deleteApprobation(id) {
             return api.deleteApprobation(id);
@@ -47,6 +62,7 @@ export const useApprobationStore = defineStore({
                 api.getTimesheetsByMonth(month, approver, token)
                     .then((response) => {
                         if (response.status === 200) {
+                            // console.log(response.data)
                             resolve(response.data);
                         } else {
                             reject(response.data);

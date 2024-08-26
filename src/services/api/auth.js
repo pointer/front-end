@@ -9,6 +9,7 @@ export default {
     const formData = new URLSearchParams();
     formData.append("username", payload.email); // Use 'username' if that's what the backend expects
     formData.append("password", payload.password);
+    // console.log(baseUrl)
     return axios.post(
       `${baseUrl}/auth/jwt/login`,
       payload,

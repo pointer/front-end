@@ -50,6 +50,7 @@ const search = ref(''); //
 const selectedTimesheets = ref([]);
 const fetchedTimesheets = ref([]);
 const approvedTimesheets = ref([]);
+
 const headers = [
     { title: 'Employee', key: 'employee' },
     { title: 'TimesheetID', key: 'timesheet_id' },
@@ -82,6 +83,7 @@ async function fetchTimesheets() {
         const response = await approbationStore.getTimesheetsByMonth(month, user_id, token);
         for (const timesheet of response) {
             fetchedTimesheets.value.push({
+                user_id : timesheet.user_id,
                 employee: timesheet.first_name + ' ' + timesheet.last_name,
                 timesheet_id: timesheet.id,
                 date: timesheet.date,
@@ -100,8 +102,8 @@ async function fetchTimesheets() {
 
 async function approveSelectedTimesheets() {
     try {
-        const user_id = localStorage.getItem('user_id');
-        if (!user_id || user_id === '') {
+        const super_id = localStorage.getItem('user_id');
+        if (!super_id || super_id === '') {
             alert("User not logged in");
             return;
         }
@@ -112,23 +114,25 @@ async function approveSelectedTimesheets() {
         }
         // selectedTimesheets.value = selectedTimesheets.value.filter(timesheet => timesheet.worked == timesheet.working_days);
         // console.log('Selected timesheets:', selectedTimesheets.value);
+        // let items = [];
         for (const timesheet of selectedTimesheets.value) {
-            // console.log('Selected timesheets:', timesheet.value);
+            let user_id =  parseInt(timesheet.user_id)
             const response = await approbationStore.saveApprobation(token, {
-                // approval_id: parseInt(timesheet.timesheet_id),
-                supervisor_id: parseInt(user_id),
+                supervisor_id: parseInt(super_id),
                 approval_date: date,
                 timesheet_id: parseInt(timesheet.timesheet_id),
                 approved: true
             });
+            // if(response.status !== 200)
+            //     // not_approved = "Approbation for " +  user_id +"  not saved";
+            //     alert("Approbation for " +  user_id +"  not saved");
             // console.log('Approbation response:', response);
         }
         alert("Timesheets approved successfully");
         // await fetchTimesheets(); // Refresh the timesheets list
-
         selectedTimesheets.value = [];
         authStore.userLogout();
-        // router.push('/');
+        router.push('/');
 
     } catch (error) {
         console.error('Approval error:', error);

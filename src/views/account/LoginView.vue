@@ -85,8 +85,22 @@ async function onSignIn() {
   const payload = new URLSearchParams();
   payload.append('username', username.value);  // or 'email', depending on what your backend expects
   payload.append('password', password.value);
-  await authStore.userLogin(payload);
-  // await authStore.userLogin(email.value, password.value);
+  const response = await authStore.userLogin(payload);
+  loading.value = true;
+  let page = "";
+  // console.log(response);
+  // if (response.status === 200) {
+  const role = localStorage.getItem("role")
+  if (role == 1){
+  router.push({ name: 'Approbation' });
+  } 
+  else{ // if (role === 0) {
+  router.push({ name: 'TimeSheet' });
+  }
+//  } else {
+//     alert("Login failed");
+//   }
+  loading.value = false;
 }
 
 async function onSignUp() {
@@ -136,17 +150,17 @@ async function login() {
   let page = "";
   // console.log(response);
   if (response.success) {
-    localStorage.setItem("user", JSON.stringify(response.user));
-    localStorage.setItem("working_days", JSON.stringify(response.working_days));
+    // localStorage.setItem("user", JSON.stringify(response.user));
+    // localStorage.setItem("working_days", JSON.stringify(response.working_days));
 
     // trying to leave the editing page of an article without saving
-    // if (response.user.role === "Supervisor") {
-    //   page = "/supervisor";
-    // } else if (response.user.role === "Employee") {
-    //   page = "/time-sheet";
-    // } else if (response.user.role === "Admin") {
-    //   page = "/";
-    // }
+    if (response.user.role === "Supervisor") {
+      page = "/supervisor";
+    } else if (response.user.role === "Employee") {
+      page = "/time-sheet";
+    } else if (response.user.role === "Admin") {
+      page = "/";
+    }
     // console.log(page);
     if (router.currentRoute.value.path !== page) {
       const failure = await router.push(page);

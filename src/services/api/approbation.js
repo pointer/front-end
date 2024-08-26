@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const baseUrl = 'https://cra-backend-a041b1ab5b0c.herokuapp.com'
-//`${import.meta.env.VITE_SRV_API_URL}`;
+//
+// const baseUrl = `${import.meta.env.VITE_SRV_API_URL}`;
 export default {
   getTimesheetsByMonth(month, approver, token) {
     return axios
@@ -44,7 +45,7 @@ export default {
   saveApprobation(token, payload) {
     // console.log(payload)
     return axios
-      .post(`${import.meta.env.VITE_SRV_API_URL}/api/approbation`, payload, {
+      .post(`${baseUrl}/api/save_approbation`, payload, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token.replace(/"/g, "")}`,
@@ -59,9 +60,9 @@ export default {
       });
   },
   saveApprobations(payload) {
-    console.log(payload);
+    // console.log(payload);
     return axios
-      .post(`${import.meta.env.VITE_SRV_API_URL}/api/approbations`, payload, {
+      .post(`${baseUrl}/api/approbations`, payload, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,

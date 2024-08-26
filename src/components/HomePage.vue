@@ -24,7 +24,7 @@
 
     <v-row class="mt-8">
       <v-col cols="12">
-        <v-btn color="primary" large :to="'/login'">Commencer</v-btn>
+        <v-btn color="primary" large  @click="commence">Commencer</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -32,7 +32,8 @@
 
 <script setup>
 import { ref } from 'vue'
-
+import { useRouter } from "vue-router";
+const router = useRouter();
 const features = ref([
   {
     icon: 'mdi-clock-outline',
@@ -53,6 +54,26 @@ const features = ref([
     link: '/admin'
   }
 ])
+async function commence() {
+  const super_id = localStorage.getItem('user_id');
+        if (!super_id || super_id === '') {
+            alert("User not logged in");
+            router.push("/account/login");
+            return;
+        }
+  const role = localStorage.getItem("role");
+  // if (user.includes("1")) drawer.value = !drawer.value;
+  if (role.includes("1")) {
+      router.push("/approbation");
+    } else if (role.includes("0")) {
+      router.push("/employee");
+    } else {
+      router.push("/");
+    }
+  // else {
+  //   router.push("/account/login");
+  // }
+}
 </script>
 
 <style scoped>
